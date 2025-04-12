@@ -1,0 +1,10 @@
+.venv/
+scripts/proxy
+scripts/rcssserver
+logs/
+__pycache__/
+utils/__pycache__/
+scripts/binary/
+service_pb2_grpc.py
+service_pb2.py
+service_pb2.pyi
