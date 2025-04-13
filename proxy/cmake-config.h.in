@@ -1,7 +1,0 @@
-
-
-#define PACKAGE_NAME "helios-base"
-
-#define VERSION @helios-base_VERSION@
-
-#cmakedefine HAVE_LIBZ
