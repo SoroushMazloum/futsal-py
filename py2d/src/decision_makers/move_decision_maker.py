@@ -61,7 +61,7 @@ class MoveDecisionMaker(IDecisionMaker):
         opp_min = wm.intercept_table.first_opponent_reach_steps
         tm_min = wm.intercept_table.first_teammate_reach_steps
         
-        if not wm.kickable_teammate_existance and (self_min <= 3 or (self_min <= tm_min and self_min < opp_min + 3)):
+        if not wm.kickable_teammate_existance and (self_min <= 3 or (self_min <= tm_min and self_min <= opp_min + 3)):
             agent.add_action(PlayerAction(body_intercept=Body_Intercept()))
             agent.add_action(PlayerAction(neck_offensive_intercept_neck=Neck_OffensiveInterceptNeck()))
             
