@@ -60,7 +60,7 @@ def run_start_script(args, rpc_port):
         
     process = subprocess.Popen(
         arguments,
-        cwd='scripts/proxy/build/bin/',  # Corrected directory to where start.sh is located
+        cwd='scripts/proxy/',  # Corrected directory to where start.sh is located
         preexec_fn=os.setsid,  # Create a new session and set the process group ID
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT  # Capture stderr and redirect it to stdout
